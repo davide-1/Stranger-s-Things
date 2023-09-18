@@ -1,0 +1,381 @@
+body  {
+  font-family: Verdana, san-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Align header on the left and links on the right */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-header {
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav link {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+.container-register-form {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.input-register-form {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.button-register-form {
+  width: 100%;
+  padding: 10px;
+  background-color: #070707;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: white;
+}
+
+.login-container {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style the form elements */
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #070707;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  border-color: white;
+}
+
+/* Style the error message */
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+/* Style the container for the list of posts */
+.post-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  gap: 50px; /* Adjust the spacing between post items */
+}
+
+
+.post-list {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.post-item {
+  margin-bottom: 16px;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.post-description {
+  margin: 8px 0;
+}
+
+.post-price,
+.post-seller,
+.post-location {
+  font-weight: bold;
+}
+
+.post-actions {
+  display: flex;
+  margin-top: 8px;
+}
+
+
+.delete-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
+
+.delete-button:hover {
+  border-color: white;
+}
+
+
+/* Style the container for the create post form */
+.create-post-form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.create-post-form h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Style form elements */
+.create-post-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-post-form input,
+.create-post-form textarea,
+.create-post-form label {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.create-post-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.create-post-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #070707;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.create-post-form button:hover {
+  border-color: white;
+}
+
+.edit-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+  margin-left: 5px;
+}
+
+.edit-post {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.edit-post form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-post input,
+.edit-post textarea,
+.edit-post label {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.edit-post textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.edit-post button {
+  width: 100%;
+  padding: 10px;
+  background-color: #070707;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-post button:hover {
+  border-color: white;
+}
+
+
+.user-profile {
+  margin-bottom: 20px;
+}
+
+.user-messages {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.message-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-item p {
+  margin: 5px 0;
+}
+
+
+
+.send-message {
+  margin-top: 16px;
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.send-button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.send-button:hover {
+  background-color: #005ab5;
+}
+
+.logout-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Makes the container take up the full viewport height */
+}
+
+.logout-header {
+  font-size: 44px; /* Adjust font size as needed */
+}
+
+.button-logout {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+  margin-left: 5px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.button-profile {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: white;
+}
